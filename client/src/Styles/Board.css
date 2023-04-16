@@ -1,0 +1,15 @@
+.board {
+    display: grid;
+    height: 100%;
+    width: 100%;
+}
+
+.whiteCell {
+    background-color: gray;
+    border: 3px solid blue;
+}
+
+.blackCell {
+    border: 3px solid red;
+    background-color: white;
+}

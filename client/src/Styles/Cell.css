@@ -1,0 +1,61 @@
+.cell {
+
+    /* Чтобы нельзя было выделять фигуры */
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    /*  */
+
+    /* font-size: 5em; */
+    font-size: min(calc(92vw / 8), calc(92vh / 8));
+    width: min(calc(92vw / 8), calc(92vh / 8));
+    height: min(calc(92vw / 8), calc(92vh / 8));
+    /* height: 1em; */
+    border: 2px solid grey;
+    text-align: center;
+    display: inline;
+    justify-content: center;
+    justify-items: center;
+}
+
+
+.lightBack {
+    background-color: rgba(15, 15, 15, 0.9);
+}
+
+.green {
+    background-color: rgba(50, 255, 50, 0.1); 
+}
+.selected {
+    box-shadow:
+    1px 1px #53ea93,
+    2px 2px #53ea93,
+    3px 3px #53ea93,
+    4px 4px #53ea93,
+    5px 5px #53ea93,
+    6px 6px #53ea93,
+    7px 7px #53ea93;
+  -webkit-transform: translateX(-7px);
+  transform: translateX(-7px);
+}
+
+.cell:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.cell:hover {
+    cursor: pointer;
+}
+
+.white {
+    color: rgba(215, 215, 215, 0.8);
+}
+
+.black {
+    color: rgba(150, 150, 150, 0.5);
+    font-weight: lighter;
+}
